@@ -1,0 +1,28 @@
+# Arquivos de log e resultados do Robot Framework
+results/
+output.xml
+log.html
+report.html
+
+# Arquivos temporários do sistema
+*.log
+*.tmp
+*.bak
+
+# Arquivos de ambiente Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Configurações locais do VSCode
+.vscode/
+
+# Cache do navegador (se estiver usando selenium)
+chromedriver.log
+geckodriver.log

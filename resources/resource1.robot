@@ -39,7 +39,7 @@ Selecionar ordenação
     Run Keyword If    '${opcao}'=='Preço: Do menor ao maior'      Set Variable    ${op}    Preço: Do menor para o maior
     Run Keyword If    '${opcao}'=='Preço: Do maior ao menor'      Set Variable    ${op}    Preço: Do maior para o menor
 
-    # Abre o dropdown "Classificar por"
+    # Abre o dropdown 
     Wait Until Element Is Visible    xpath=//span[contains(@class,'a-button-text') and @data-action='a-dropdown-button']    ${DEFAULT_TIMEOUT}
     Scroll Element Into View         xpath=//span[contains(@class,'a-button-text') and @data-action='a-dropdown-button']
     Click Element                    xpath=//span[contains(@class,'a-button-text') and @data-action='a-dropdown-button']
@@ -48,7 +48,7 @@ Selecionar ordenação
     Wait Until Element Is Visible    xpath=//a[contains(@class,'a-dropdown-link') and normalize-space(.)='${op}']    ${DEFAULT_TIMEOUT}
     Click Element                    xpath=//a[contains(@class,'a-dropdown-link') and normalize-space(.)='${op}']
 
-    # Aguarda recarregar
+  
     Wait Until Page Contains Element    ${RESULT_CARD}    ${DEFAULT_TIMEOUT}
 
 Validar página de produto
